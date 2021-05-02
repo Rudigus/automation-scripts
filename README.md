@@ -1,2 +1,6 @@
-# automation-scripts
-Scripts to automate tasks
+# Automation Scripts
+Scripts to automate a variety of tasks
+
+## Video
+
+To be added
