@@ -1,6 +1,8 @@
 # Automation Scripts
 Scripts to automate a variety of tasks
 
-## Video
+## Media
+Image, audio, video and more!!!
 
+### Video Generator
 To be added
