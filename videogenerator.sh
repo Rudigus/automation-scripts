@@ -87,7 +87,7 @@ for track in "${audio[@]}"; do
 	if [ "$animated" = true ]; then
 		ffmpeg -i "$track" -ignore_loop 0 -i "$image" -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" -shortest -strict -2 -c:v libx264 -threads 4 -c:a aac -b:a 192k -pix_fmt yuv420p -shortest "$filename.mp4"
 	else
-		ffmpeg -loop 1 -i "$image" -i "$track" -shortest -r 1 -f mp4 "$filename.mp4"
+		ffmpeg -loop 1 -i "$image" -i "$track" -shortest -f mp4 "$filename.mp4"
 	fi
 	printf "\nConversion ended\n"
 done
